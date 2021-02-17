@@ -62,6 +62,15 @@ class App extends Component {
 
 
   render() {
+
+    let cardComponets = [];
+    let key = 0;
+    for(var i=0;i<this.state.launchDetails.length; i++){
+      cardComponets.push(
+        <Card className="col-1" launchData={this.state.launchDetails[i]} key={this.state.launchDetails[i].flight_number}/>
+      );
+    }
+
     return (
     <div className="App row">
       <div style={{width: "100%"}}>
@@ -71,7 +80,7 @@ class App extends Component {
         <Filters filterByYearHandler={this.filterByYearHandler} filterByIsSuccessfulLaunch={this.filterByIsSuccessfulLaunch} filterByIsSuccessfulLanding = {this.filterByIsSuccessfulLanding}/>
       </div>
       <div className="col-2">  
-        {this.state.launchDetails.length > 1 ? this.state.launchDetails.map((Component, key) => <Card className="col-1" launchData={Component} key={key}/>) : null}
+        {cardComponets}
       </div>
 
     </div>

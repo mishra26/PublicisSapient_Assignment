@@ -13,7 +13,7 @@ class Card extends Component {
       this.missionIDs = this.props.launchData.mission_id;
       this.launchYear = this.props.launchData.launch_year;
       this.successfulLaunch = this.props.launchData.launch_success ? "Yes" : "No";
-      this.successfulLanding = "not sure"//this.props.launchData.rocket.cores[0].land_success;
+      this.successfulLanding = this.props.launchData.rocket.first_stage.cores[0].land_success ? "Yes" : "No";
     }
   
     render() {
