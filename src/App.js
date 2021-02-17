@@ -5,7 +5,6 @@ import Filters from './filters.js'
 import './App.css';
 
 class App extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -28,15 +27,12 @@ class App extends Component {
 
   componentDidMount() {
     this.updateDataOnScreen();
-    //FetchAPIData(this.state.lauchYear,this.state.isSuccessfulLaunch,this.state.isSuccessfulLanding)
-    //  .then((data)=>{
-    //    this.setState({ launchDetails: data });
-    //  });
-      
+    
   }
 
   filterByYearHandler = (year) =>{
-    console.log(year);
+    var el = document.getSelection();
+    el.
     this.lauchYear = year;
     this.updateDataOnScreen();
   }

@@ -25,8 +25,8 @@ class Filters extends Component {
 
             yearComponents.push(
                 <div className="horizontal-div"key={key++}>
-                    <div className="child-div" onClick={()=>this.props.filterByYearHandler(leftYear)}> {leftYear} </div>
-                    {rightYear !== null ? <div className="child-div" onClick={()=>this.props.filterByYearHandler(rightYear)}> {rightYear} </div> : null}
+                    <button className="child-div" onClick={()=>this.props.filterByYearHandler(leftYear)}> {leftYear} </button>
+                    {rightYear !== null ? <button className="child-div" onClick={()=>this.props.filterByYearHandler(rightYear)}> {rightYear} </button> : null}
                 </div>
             );
         }

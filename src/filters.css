@@ -13,4 +13,13 @@
     text-align: center;
     box-shadow: 0 0 5px -1px rgb(0 0 0 / 20%);
     cursor: pointer;
+    border: none;
+}
+
+.child-div:focus{
+    background-color: lime;
+}
+
+button:active{
+    background:olive;
 }
