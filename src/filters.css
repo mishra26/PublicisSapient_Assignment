@@ -1,0 +1,13 @@
+.filter-body{
+    background: white;
+}
+
+.child-div{
+    display: inline-block;
+    text-align: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 40px;
+    background: lightgreen;
+}

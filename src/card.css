@@ -1,0 +1,21 @@
+.image {
+    pointer-events: none;
+  }
+
+.Card{
+    /* width: 700px; */
+    /* display: block; */
+    margin-right: 20px;;
+    margin-bottom:20px;
+    background-color: white;
+}
+
+.Mission-Name{
+    color:#4000ff;
+    text-align: left;
+    
+}
+.col-0 {
+    width: 30%;
+
+}
